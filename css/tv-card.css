@@ -1,0 +1,126 @@
+
+.tv-header h1 {
+    font-size: 55px;
+    color: #9c9ca6;
+    margin-bottom: 30px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    margin-top: 90px;
+}
+.tv-header p a {
+    color: #00b4da;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 20px;
+}
+.tv-header p .glyphicon-chevron-right {
+    margin-right: 20px;
+}
+.video {
+    margin-bottom: 50px;
+}
+.video h2,
+.video-block h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;   
+    margin-bottom: 20px;
+    text-align: left;
+}
+.video img {
+    max-width: 100%;
+}
+
+
+.video-block {
+    margin-bottom: 50px;
+}
+.video-block .title{
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.content {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+.fadeIn-bottom .glyphicon {
+    color: #fff;
+    font-size: 30px;
+}
+
+.fadeIn-top{
+  top: 20%;
+}
+
+.fadeIn-left{
+  left: 20%;
+}
+
+.fadeIn-right{
+  left: 80%;
+}

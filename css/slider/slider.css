@@ -1,0 +1,455 @@
+
+/**************************************************************** must neede slider-pro *********/
+
+.slider-pro {
+	position: relative;
+	margin: 0 auto;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.sp-slides-container {
+	position: relative;
+}
+
+.sp-mask {
+	position: relative;
+	overflow: hidden;
+}
+
+.sp-slides {
+	position: relative;
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+}
+
+.sp-slide {
+	position: absolute;
+}
+
+.sp-image-container {
+	overflow: hidden;
+}
+
+.sp-image {
+	position: relative;
+	display: block;
+	border: none;
+}
+
+.sp-no-js {
+	overflow: hidden;
+	max-width: 100%;
+}
+
+/* Layers
+--------------------------------------------------*/
+.sp-layer {
+	position: absolute;
+	margin: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-backface-visibility: hidden;
+}
+
+.sp-black {
+	color: #FFF;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.sp-white {
+	color: #000;
+	background: rgb(255, 255, 255);
+	background: rgba(255, 255, 255, 0.7);
+}
+
+.sp-rounded {
+	border-radius: 10px;
+}
+
+.sp-padding {
+	padding: 10px;
+}
+
+/* Touch Swipe
+--------------------------------------------------*/
+.sp-selectable {
+	cursor: default;
+}
+
+/* Caption
+--------------------------------------------------*/
+.sp-caption-container {
+	text-align: center;
+	margin-top: 10px;
+}
+
+/* Full Screen
+--------------------------------------------------*/
+.sp-full-screen {
+	margin: 0 !important;
+	background-color: #000;
+}
+
+.sp-full-screen-button {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	font-size: 30px;
+	line-height: 1;
+	cursor: pointer;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.sp-full-screen-button:before {
+	content: '\2195';
+}
+
+.sp-fade-full-screen {
+	opacity: 0;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.slider-pro:hover .sp-fade-full-screen {
+	opacity: 1;
+}
+
+/* Buttons
+--------------------------------------------------*/
+.sp-buttons {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.sp-rtl .sp-buttons {
+	direction: rtl;
+}
+
+.sp-full-screen .sp-buttons {
+	display: none;
+}
+
+.sp-button {
+	width: 10px;
+	height: 10px;
+	border: 2px solid #000;
+	border-radius: 50%;
+	margin: 4px;
+	display: inline-block;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.sp-selected-button {
+	background-color: #000;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.sp-button {
+		width: 14px;
+		height: 14px;
+	}
+}
+
+@media only screen and (min-width: 568px) and (max-width: 768px) {
+	.sp-button {
+		width: 16px;
+		height: 16px;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+	.sp-button {
+		width: 18px;
+		height: 18px;
+	}
+}
+
+
+/*------------------------  custom css for slider ----------------------------*/
+.tc-btn {
+    height: 52px;
+    line-height: 52px;
+    font-size: 16px;
+    padding: 0 45px;
+    font-family: 'Varela Round', sans-serif;
+    display: inline-block;
+    border: 0;
+    background: #36b8cb;
+    color: #fff;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-box-shadow: 0px 2px 9px 0px rgba(50, 50, 50, 0.45);
+    -moz-box-shadow: 0px 2px 9px 0px rgba(50, 50, 50, 0.45);
+    box-shadow: 0px 2px 9px 0px rgba(50, 50, 50, 0.45);
+}
+
+.tc-btn:hover {
+    color: #fff;
+}
+
+.tc-btn.light {
+    border: 1px solid #fff;
+    background: none;
+}
+
+.tc-btn.light:hover {
+    background: #fff;
+    color: #999;
+    opacity: 1;
+}
+
+.tc-btn.shadow-0 {
+    box-shadow: none;
+}
+
+.tc-btn.sm {
+    height: 42px;
+    line-height: 42px;
+    padding: 0 20px;
+    font-size: 13px;
+}
+
+.tc-btn.full-with {
+    width: 100%;
+}
+
+.tc-btn:hover {
+    opacity: 0.8;
+    box-shadow: none;
+}
+
+
+.curve-up {
+    position: relative;
+}
+
+.curve-up::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 50px;
+
+    z-index: 1;
+    background-size: 100%!important;
+}
+
+.curve-down {
+    position: relative;
+}
+
+.curve-down::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background: url(assets/images/curve-down.png) no-repeat top;
+    background-size: 100%!important;
+}
+
+.curve-up-small {
+    position: relative;
+}
+
+.curve-up-small::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    background: url(assets/images/curve-up-small.png) no-repeat bottom;
+    background-size: 100%!important;
+}
+
+.curve-down.style-2::before {
+    background: url(assets/images/curve-down-2.png) no-repeat;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+.wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+
+/******* Banner Slider ******/
+
+.banner-slider {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.banner-slider > img {
+    width: 100%;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-slider .sp-slides-container {
+    position: absolute;
+    top: 0;
+}
+
+/* Caption */
+
+.banner-caption span {
+    color: #fff;
+    font-size: 16px;
+    margin: 0 0 10px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.banner-caption h1 {
+    letter-spacing: -3px;
+    font-size: 60px;
+    color: #fff;
+    line-height: 60px;
+}
+
+.banner-caption p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 26px;
+    margin: 0 0 40px;
+}
+
+.banner-caption p span {
+    text-transform: initial;
+}
+
+/* Banner thumbs */
+
+.banner-slider .sp-thumbnails-container {
+    position: absolute!important;
+    z-index: 3;
+    left: 50px!important;
+    margin: 0 0 0;
+    top: 50%;
+    bottom: 0;
+    overflow: visible!important;
+}
+
+.banner-slider .sp-thumbnail-container {
+    height: 20px;
+    width: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    position: static;
+    float: none!important;
+    margin: 0 0 15px!important;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.banner-slider .sp-bottom-thumbnails.sp-has-pointer {
+    margin: -100px 0 0;
+}
+
+.sp-thumbnail-container.sp-selected-thumbnail {
+    background: #f6b61d;
+    border: 3px solid #fff;
+}
+/*------------------------------ responsive for slider ---------------------------------------*/
+@media (max-width: 1400px) {
+.banner-caption span{ margin: 0;}
+.banner-caption h1{ font-size: 50px; line-height: 50px;}
+.banner-caption p{ line-height: 23px; margin: 0 0 20px;}
+
+}
+
+@media (max-width: 1199px) {
+.banner-caption h1{ font-size: 45px; line-height: 45px;}
+.caption-text{ left: 135px !important; top: 100px!important;}
+.layer-img-1,
+.layer-img-2{ width: 33%;}
+.layer-img-1{ left: 580px!important;}
+.layer-img-2{ left: 500px!important; top: 10px!important;}
+.banner-slider .sp-thumbnails-container{ left: 20px !important;}
+
+
+}
+
+@media (max-width: 1024px) {
+.caption-text{ left: 120px !important; top: 30px!important;}
+.banner-caption h1{ font-size: 30px; line-height: 30px; letter-spacing: -1px; margin: 0 0 10px;}
+.banner-caption p{ line-height: 22px;}
+.banner-caption p span{ display: none;}
+.banner-caption .tc-btn{ height: 42px; line-height: 43px; font-size: 13px; padding: 0 25px;}
+}
+
+@media (max-width: 1023px) {
+.tc-btn{ height: 45px; line-height: 45px; padding: 0 25px;}
+.alert-1 i{ vertical-align: middle;}
+.services-holder{ margin: -7px 0 0;}
+.caption-text{ left: 127px !important; top: 37px!important;}
+.layer-img-2{ left: 550px !important;}
+.layer-img-1{ left: 630px !important; top: 15px!important;}
+}
+
+@media (max-width: 800px) {
+.banner-caption p{ display: none;}
+.layer-img-2{ left: 450px !important; top: 10px!important;}
+.layer-img-1{ left: 490px !important; top: -5px !important;}
+.caption-text{ left: 70px !important;}
+}
+
+@media screen and (max-width: 768px) {
+.caption-text{ left: 100px !important;}
+}
+
+@media screen and (max-width: 767px) {
+.brands-slide{ padding: 60px 0 40px; position: relative;}
+.tc-btn{ height: 40px; line-height: 40px; padding: 0 15px; font-size: 12px;}
+
+}
+
+@media screen and (max-width: 639px) {
+.sp-padding{ padding: 0;}
+.layer-img-1,
+.layer-img-2{ width: 38%;}
+.banner-slider .sp-thumbnails-container{ display: none;}
+.caption-text{ left: 20px!important;}
+}
+
+@media screen and (max-width: 479px) {
+
+.banner-caption h1{ font-size: 18px; line-height: 20px; margin: 0 0 10px;}
+.banner-caption span{ font-size: 8px;}
+.curve-up::before{ height: 0;}
+.sp-thumbnails-container{ display: none;}
+.banner-caption .tc-btn{ height: 30px; line-height: 31px; font-size: 9px; padding: 0 11px;}
+.layer-img-2{ left: 200px !important; top: 20px !important;}
+.layer-img-1{ left: 220px !important; top: 15px !important;}
+
+
+}
+@media screen and (max-width: 359px) {
+.banner-caption .tc-btn{ display: none;}
+}

@@ -1,0 +1,110 @@
+
+
+.card-details {
+    padding: 80px 30px;
+}
+.card-details img {
+    max-width: 100%;
+}
+.apply-btn {
+    background: #00b4da;
+    padding: 10px 50px;
+    color: #fff;
+    border-radius: 100px;
+    font-size: 17px;
+    margin-top: 30px;
+    display: inline-block;
+}
+.cards-info h1 {
+    font-size: 38px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+.cards-info h3 {
+    font-size: 19px;
+    color: #9c9ca6;
+    margin-bottom: 20px;
+}
+.cards-info p {
+    font-size: 16px;
+    font-family: 'Hind', sans-serif;
+    color: #9c9ca6;
+    line-height: 150%;
+}
+.card-details-title {
+    font-size: 38px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.card-details-para {
+    font-size: 16px;
+    font-family: 'Hind', sans-serif;
+    color: #9c9ca6;
+    line-height: 150%;
+}
+.list {
+    list-style-type: none;
+    margin-left: -40px;
+    margin-top: 30px;
+    line-height: 350%;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color:#212558;
+}
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #00b4da;
+    margin-right: 30px;
+    display: inline-block;
+}
+.summary h1 {
+    font-size: 38px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+}
+.table-bordered {
+    margin-bottom: 80px;
+}
+.table-bg {
+    background: #212558;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.table>thead>tr.table-bg th {
+    padding: 20px 0;
+    text-align: center;
+    border-color: #343434;
+    color: #fff;
+    font-weight: normal;
+    font-size: 16px;
+}
+.table td {
+    border-color: #e9edf0;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px 0;
+}
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    padding: 20px 0;
+}
+.card-text-block {
+    margin-bottom: 50px;
+}
+.card-text-block h3 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+.card-text-block p {
+    font-size: 16px;
+    color: #84848c;
+    font-family: 'Montserrat', sans-serif;
+}
